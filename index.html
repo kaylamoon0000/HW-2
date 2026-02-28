@@ -10,13 +10,13 @@
 
   <!-- HEADER -->
   <header>
-    <div class="container">
+    <div class="container header-flex">
       <div class="site-branding">
         <a href="index.html">SiteName</a>
       </div>
 
-      <nav class="site-navigation">
-        <ul>
+      <nav>
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -28,87 +28,83 @@
 
   <main>
 
-    <!-- HERO SLIDER PLACEHOLDER -->
+    <!-- HERO -->
     <section class="hero">
-      <div class="container">
-        <img src="images/photo1.jpg" alt="Slide 1">
-        <img src="images/photo2.jpg" alt="Slide 2">
-        <img src="images/photo3.jpg" alt="Slide 3">
+      <div class="container hero-grid">
+        <img src="images/photo1.jpg" alt="">
+        <img src="images/photo2.jpg" alt="">
+        <img src="images/photo3.jpg" alt="">
       </div>
     </section>
 
     <!-- ABOUT PREVIEW -->
     <section class="about-preview">
-      <div class="container">
+      <div class="container narrow">
         <h2>About Us</h2>
-        <img src="images/about.jpg" alt="About image">
-        <p>
-          This section provides a brief introduction about the site or business.
-        </p>
-        <a href="about.html">Learn More</a>
+        <img src="images/about.jpg" alt="">
+        <p>This section provides a brief introduction about the site or business.</p>
+        <a class="btn" href="about.html">Learn More</a>
       </div>
     </section>
 
-    <!-- SERVICES / FEATURES -->
+    <!-- SERVICES -->
     <section class="features">
       <div class="container">
         <h2>Our Services</h2>
 
-        <div class="feature-card">
-          <h3>Service One</h3>
-          <p>Description of service one.</p>
-        </div>
+        <div class="card-grid">
+          <div class="feature-card">
+            <h3>Service One</h3>
+            <p>Description of service one.</p>
+          </div>
 
-        <div class="feature-card">
-          <h3>Service Two</h3>
-          <p>Description of service two.</p>
-        </div>
+          <div class="feature-card">
+            <h3>Service Two</h3>
+            <p>Description of service two.</p>
+          </div>
 
-        <div class="feature-card">
-          <h3>Service Three</h3>
-          <p>Description of service three.</p>
+          <div class="feature-card">
+            <h3>Service Three</h3>
+            <p>Description of service three.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- GALLERY PREVIEW -->
+    <!-- GALLERY -->
     <section class="gallery-preview">
       <div class="container">
         <h2>Gallery</h2>
 
-        <img src="images/05 (1).jpg" alt="Gallery image 1">
-        <img src="images/06 (1).jpg" alt="Gallery image 2">
-        <img src="images/07 (1).jpg" alt="Gallery image 3">
-        <img src="images/08 (1).jpg" alt="Gallery image 4">
-        <img src="images/09 (1).jpg" alt="Gallery image 5">
-        <img src="images/10 (2).jpg" alt="Gallery image 6">
+        <div class="gallery-grid">
+          <img src="images/05 (1).jpg" alt="">
+          <img src="images/06 (1).jpg" alt="">
+          <img src="images/07 (1).jpg" alt="">
+          <img src="images/08 (1).jpg" alt="">
+          <img src="images/09 (1).jpg" alt="">
+          <img src="images/10 (2).jpg" alt="">
+        </div>
       </div>
     </section>
 
-    <!-- CALL TO ACTION -->
+    <!-- CTA -->
     <section class="cta">
-      <div class="container">
+      <div class="container narrow">
         <h2>Ready to Work With Us?</h2>
         <p>Contact us today to get started.</p>
-        <a href="contact.html">Contact Us</a>
+        <a class="btn" href="contact.html">Contact Us</a>
       </div>
     </section>
 
     <!-- CONTACT PREVIEW -->
     <section class="contact-preview">
-      <div class="container">
+      <div class="container narrow">
         <h2>Contact Us</h2>
 
-        <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" name="name">
-
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email">
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message"></textarea>
-
+        <form class="contact-form">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Message"></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
@@ -116,7 +112,6 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container">
       <p>© 2026 SiteName. All rights reserved.</p>
