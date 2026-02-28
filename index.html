@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home — SiteName</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Reusable Site Header -->
+  <!-- HEADER -->
   <header>
     <div class="container">
       <div class="site-branding">
@@ -29,120 +28,88 @@
 
   <main>
 
-    <!-- Hero Slider Placeholder -->
+    <!-- HERO SLIDER PLACEHOLDER -->
     <section class="hero">
-      <div class="container">
-        <h1>Welcome to SiteName</h1>
-
-        <div class="hero-slider">
-          <div class="slide">Slide 1</div>
-          <div class="slide">Slide 2</div>
-          <div class="slide">Slide 3</div>
-        </div>
+      <div class="slide">
+        <img src="images/photo1.jpg" alt="Slide 1">
+      </div>
+      <div class="slide">
+        <img src="images/photo2.jpg" alt="Slide 2">
+      </div>
+      <div class="slide">
+        <img src="images/photo3.jpg" alt="Slide 3">
       </div>
     </section>
 
-    <!-- About Preview -->
+    <!-- ABOUT PREVIEW -->
     <section class="about-preview">
-      <div class="container">
-        <h2>About Us</h2>
+      <h2>About Us</h2>
+      <img src="images/about.jpg" alt="About image">
+      <p>
+        This is a short introduction about the site or business.
+      </p>
+    </section>
 
-        <div class="about-content">
-          <div class="about-image">
-            <img src="images/about.jpg" alt="About preview image">
-          </div>
+    <!-- SERVICES / FEATURES -->
+    <section class="features">
+      <h2>Our Features</h2>
 
-          <div class="about-text">
-            <p>
-              This is a short introduction about the organization. It explains
-              what the site is about and invites visitors to learn more.
-            </p>
-            <a href="about.html">Learn More</a>
-          </div>
-        </div>
+      <div class="feature-card">
+        <h3>Feature One</h3>
+        <p>Description of feature one.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Feature Two</h3>
+        <p>Description of feature two.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Feature Three</h3>
+        <p>Description of feature three.</p>
       </div>
     </section>
 
-    <!-- Services / Features -->
-    <section class="services">
-      <div class="container">
-        <h2>Our Services</h2>
-
-        <div class="service-cards">
-          <article class="card">
-            <h3>Service One</h3>
-            <p>Description of the first service.</p>
-          </article>
-
-          <article class="card">
-            <h3>Service Two</h3>
-            <p>Description of the second service.</p>
-          </article>
-
-          <article class="card">
-            <h3>Service Three</h3>
-            <p>Description of the third service.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Preview -->
+    <!-- GALLERY PREVIEW -->
     <section class="gallery-preview">
-      <div class="container">
-        <h2>Gallery</h2>
+      <h2>Gallery</h2>
 
-        <div class="gallery-grid">
-          <img src="images/gallery1.jpg" alt="Gallery image 1">
-          <img src="images/gallery2.jpg" alt="Gallery image 2">
-          <img src="images/gallery3.jpg" alt="Gallery image 3">
-          <img src="images/gallery4.jpg" alt="Gallery image 4">
-          <img src="images/gallery5.jpg" alt="Gallery image 5">
-          <img src="images/gallery6.jpg" alt="Gallery image 6">
-        </div>
-
-        <a href="gallery.html">View Full Gallery</a>
-      </div>
+      <img src="images/photo1.jpg" alt="">
+      <img src="images/photo2.jpg" alt="">
+      <img src="images/photo3.jpg" alt="">
+      <img src="images/photo4.jpg" alt="">
+      <img src="images/photo5.jpg" alt="">
+      <img src="images/photo6.jpg" alt="">
     </section>
 
-    <!-- Call to Action -->
-    <section class="call-to-action">
-      <div class="container">
-        <h2>Ready to Get Started?</h2>
-        <p>Contact us today to learn more about what we offer.</p>
-        <a href="contact.html">Contact Us</a>
-      </div>
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+      <h2>Ready to Get Started?</h2>
+      <p>Contact us today to learn more.</p>
+      <a href="contact.html">Contact Us</a>
     </section>
 
-    <!-- Contact Preview / Form -->
+    <!-- CONTACT PREVIEW -->
     <section class="contact-preview">
-      <div class="container">
-        <h2>Contact Us</h2>
+      <h2>Contact Us</h2>
 
-        <form action="#" method="post">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name" required>
-          </div>
+      <form>
+        <label>Name</label>
+        <input type="text">
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" required>
-          </div>
+        <label>Email</label>
+        <input type="email">
 
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
+        <label>Message</label>
+        <textarea></textarea>
 
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+        <button type="submit">Send</button>
+      </form>
     </section>
 
   </main>
 
-  <!-- Reusable Site Footer -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <p>© 2026 SiteName. All rights reserved.</p>
