@@ -113,12 +113,10 @@ footer {
 }
 
 /* ======================================================
-   LAYER 2 — SECTION LAYOUTS
+   LAYER 2 — HOME PAGE SECTIONS
 ====================================================== */
 
-/* =========================
-   HERO SLIDER (CSS ONLY)
-========================= */
+/* HERO */
 .hero {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -131,7 +129,6 @@ footer {
   object-fit: cover;
 }
 
-/* Stack on mobile */
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
@@ -142,9 +139,7 @@ footer {
   }
 }
 
-/* =========================
-   ABOUT PREVIEW — TWO COLUMN
-========================= */
+/* ABOUT PREVIEW */
 .about-preview {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -152,30 +147,15 @@ footer {
   align-items: center;
 }
 
-.about-preview img {
-  width: 100%;
-  height: auto;
-}
-
-/* Mobile */
 @media (max-width: 768px) {
   .about-preview {
     grid-template-columns: 1fr;
   }
 }
 
-/* =========================
-   FEATURES / SERVICES CARDS
-========================= */
+/* FEATURES */
 .features {
   text-align: center;
-}
-
-.features h2 {
-  margin-bottom: 40px;
-}
-
-.features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -187,27 +167,19 @@ footer {
   background: #fafafa;
 }
 
-.feature-card h3 {
-  margin-bottom: 12px;
-}
-
-/* Tablet */
 @media (max-width: 900px) {
   .features {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .features {
     grid-template-columns: 1fr;
   }
 }
 
-/* =========================
-   GALLERY PREVIEW GRID
-========================= */
+/* GALLERY PREVIEW */
 .gallery-preview {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -215,28 +187,23 @@ footer {
 }
 
 .gallery-preview img {
-  width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
-/* Tablet */
 @media (max-width: 900px) {
   .gallery-preview {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .gallery-preview {
     grid-template-columns: 1fr;
   }
 }
 
-/* =========================
-   CALL TO ACTION
-========================= */
+/* CTA */
 .cta {
   background: #222;
   color: #fff;
@@ -244,10 +211,122 @@ footer {
   padding: 70px 20px;
 }
 
-.cta h2 {
-  margin-bottom: 15px;
+.cta p {
+  margin: 15px 0 25px;
 }
 
-.cta p {
-  margin-bottom: 25px;
+/* ======================================================
+   LAYER 3 — INNER PAGES
+====================================================== */
+
+/* =========================
+   PAGE TITLE SECTION
+========================= */
+.page-title {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.page-title h1 {
+  font-size: 2rem;
+}
+
+/* =========================
+   ABOUT PAGE — ALTERNATING LAYOUT
+========================= */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Reverse layout for alternating sections */
+.about-section.reverse {
+  direction: rtl;
+}
+
+.about-section.reverse > * {
+  direction: ltr;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-section,
+  .about-section.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+}
+
+/* =========================
+   GALLERY PAGE GRID
+========================= */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effect */
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   CONTACT PAGE FORM
+========================= */
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  font: inherit;
+  width: 100%;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form button {
+  align-self: flex-start;
 }
