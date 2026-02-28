@@ -22,12 +22,13 @@ body {
 }
 
 /* =========================
-   CONTAINER
+   CONTAINER (MAIN FIX)
 ========================= */
 .container {
   width: 90%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* =========================
@@ -35,6 +36,13 @@ body {
 ========================= */
 section {
   padding: 60px 0;
+}
+
+/* =========================
+   GLOBAL TEXT ALIGNMENT
+========================= */
+h1, h2, h3 {
+  text-align: center;
 }
 
 /* =========================
@@ -117,10 +125,11 @@ footer {
 ====================================================== */
 
 /* HERO */
-.hero {
+.hero .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  justify-items: center;
 }
 
 .hero img {
@@ -130,7 +139,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .hero {
+  .hero .container {
     grid-template-columns: 1fr;
   }
 
@@ -140,65 +149,72 @@ footer {
 }
 
 /* ABOUT PREVIEW */
-.about-preview {
+.about-preview .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
+  justify-items: center;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
-  .about-preview {
+  .about-preview .container {
     grid-template-columns: 1fr;
   }
 }
 
 /* FEATURES */
-.features {
+.features .container {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  justify-items: center;
 }
 
 .feature-card {
   padding: 25px;
   border: 1px solid #ddd;
   background: #fafafa;
+  width: 100%;
+  max-width: 300px;
 }
 
 @media (max-width: 900px) {
-  .features {
+  .features .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .features {
+  .features .container {
     grid-template-columns: 1fr;
   }
 }
 
 /* GALLERY PREVIEW */
-.gallery-preview {
+.gallery-preview .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
+  justify-items: center;
 }
 
 .gallery-preview img {
   height: 180px;
   object-fit: cover;
+  width: 100%;
 }
 
 @media (max-width: 900px) {
-  .gallery-preview {
+  .gallery-preview .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .gallery-preview {
+  .gallery-preview .container {
     grid-template-columns: 1fr;
   }
 }
@@ -211,6 +227,12 @@ footer {
   padding: 70px 20px;
 }
 
+.cta .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .cta p {
   margin: 15px 0 25px;
 }
@@ -219,9 +241,7 @@ footer {
    LAYER 3 — INNER PAGES
 ====================================================== */
 
-/* =========================
-   PAGE TITLE SECTION
-========================= */
+/* PAGE TITLE */
 .page-title {
   background: #f4f4f4;
   text-align: center;
@@ -232,41 +252,38 @@ footer {
   font-size: 2rem;
 }
 
-/* =========================
-   ABOUT PAGE — ALTERNATING LAYOUT
-========================= */
-.about-section {
+/* ABOUT PAGE ALTERNATING */
+.about-section .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
+  justify-items: center;
+  text-align: center;
 }
 
-/* Reverse layout for alternating sections */
-.about-section.reverse {
+.about-section.reverse .container {
   direction: rtl;
 }
 
-.about-section.reverse > * {
+.about-section.reverse .container > * {
   direction: ltr;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
-  .about-section,
-  .about-section.reverse {
+  .about-section .container,
+  .about-section.reverse .container {
     grid-template-columns: 1fr;
     direction: ltr;
   }
 }
 
-/* =========================
-   GALLERY PAGE GRID
-========================= */
+/* GALLERY PAGE GRID */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
+  justify-items: center;
 }
 
 .gallery-grid img {
@@ -276,32 +293,29 @@ footer {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Hover effect */
 .gallery-grid img:hover {
   transform: scale(1.05);
   opacity: 0.85;
 }
 
-/* Tablet */
 @media (max-width: 900px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .gallery-grid {
     grid-template-columns: 1fr;
   }
 }
 
-/* =========================
-   CONTACT PAGE FORM
-========================= */
+/* CONTACT FORM */
 .contact-form {
   max-width: 700px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 .contact-form form {
